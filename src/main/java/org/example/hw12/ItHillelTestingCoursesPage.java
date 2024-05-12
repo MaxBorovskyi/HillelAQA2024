@@ -30,12 +30,6 @@ public class ItHillelTestingCoursesPage {
         driver.get(URL);
     }
 
-    //constructor
-    public WebElement ItHillelTestingCoursesPage(WebDriver driver) {
-        this.driver = driver;
-        return driver.findElements(ALL_QA_COURSES).get(0);
-    }
-
     public List<WebElement> getCourses() {
         return driver.findElements(ALL_QA_COURSES);
     }
